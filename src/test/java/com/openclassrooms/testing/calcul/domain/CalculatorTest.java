@@ -128,34 +128,34 @@ public class CalculatorTest {
 		// ...
 	}
 
-	@Test
-	public void listDigits_shouldReturnsTheListOfDigits_ofPositiveInteger() {
-		// GIVEN
-		final int number = 95897;
-
-		// WHEN
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
-
-		// THEN
-		assertThat(actualDigits).containsExactlyInAnyOrder(9, 5, 8, 7);
-		final Set<Integer> expectedDigits = Stream.of(5, 7, 8, 9).collect(Collectors.toSet());
-		assertEquals(expectedDigits, actualDigits);
-	}
-
-	@Test
-	public void listDigits_shouldReturnsTheListOfDigits_ofNegativeInteger() {
-		final int number = -124432;
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
-		assertThat(actualDigits).containsExactlyInAnyOrder(1, 2, 3, 4);
-	}
-
-	@Test
-	public void listDigits_shouldReturnsTheListOfZero_ofZero() {
-		final int number = 0;
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
-		assertThat(actualDigits).containsExactly(0);
-	}
-
+//	@Test
+//	public void listDigits_shouldReturnsTheListOfDigits_ofPositiveInteger() {
+//		// GIVEN
+//		final int number = 95897;
+//
+//		// WHEN
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
+//
+//		// THEN
+//		assertThat(actualDigits).containsExactlyInAnyOrder(9, 5, 8, 7);
+//		final Set<Integer> expectedDigits = Stream.of(5, 7, 8, 9).collect(Collectors.toSet());
+//		assertEquals(expectedDigits, actualDigits);
+//	}
+//
+//	@Test
+//	public void listDigits_shouldReturnsTheListOfDigits_ofNegativeInteger() {
+//		final int number = -124432;
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
+//		assertThat(actualDigits).containsExactlyInAnyOrder(1, 2, 3, 4);
+//	}
+//
+//	@Test
+//	public void listDigits_shouldReturnsTheListOfZero_ofZero() {
+//		final int number = 0;
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(number);
+//		assertThat(actualDigits).containsExactly(0);
+//	}
+//
 	@Disabled("Stoppé car cela échoue tous les mardis")
 	@Test
 	public void testDate() {
@@ -181,17 +181,17 @@ public class CalculatorTest {
 
 	}
 
-	@Test
-	public void digitsSetOfFact12_shouldReturnsTheCorrectAnswser() {
-		// GIVEN
-		final int cacheFactorial = 479001600;
-
-		// WHEN
-		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(cacheFactorial);
-
-		// THEN
-		assertThat(actualDigits).containsExactlyInAnyOrder(0, 1, 4, 6, 7, 9);
-	}
+//	@Test
+//	public void digitsSetOfFact12_shouldReturnsTheCorrectAnswser() {
+//		// GIVEN
+//		final int cacheFactorial = 479001600;
+//
+//		// WHEN
+//		final Set<Integer> actualDigits = calculatorUnderTest.digitsSet(cacheFactorial);
+//
+//		// THEN
+//		assertThat(actualDigits).containsExactlyInAnyOrder(0, 1, 4, 6, 7, 9);
+//	}
 
 	@Test
 	public void multiplyAndDivide_shouldBeIdentity() {
