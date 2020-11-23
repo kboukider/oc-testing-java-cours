@@ -15,6 +15,8 @@
 		 <sonar.projectKey>kboukider_oc-testing-java-cours</sonar.projectKey>
 		<sonar.organization>kboukider</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.scanner.force-deprecated-java-version>true</sonar.scanner.force-deprecated-java-version>
+	
 	</properties>
 
 	<parent>
